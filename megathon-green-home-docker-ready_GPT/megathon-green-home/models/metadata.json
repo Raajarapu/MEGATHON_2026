@@ -1,0 +1,43 @@
+{
+  "features": [
+    "age",
+    "floor_area",
+    "bedrooms",
+    "value_current_gbp",
+    "annual_electricity_kwh",
+    "annual_gas_kwh",
+    "energy_intensity_kwh_m2",
+    "space_heat_kwh",
+    "hot_water_kwh",
+    "base_electricity_kwh",
+    "other_gas_kwh",
+    "pv_offset_kwh",
+    "property_type",
+    "energy_rating",
+    "heating",
+    "insulation",
+    "glazing",
+    "region",
+    "solar",
+    "smart_controls",
+    "has_loft",
+    "cavity_walls",
+    "wall_insulated",
+    "draught_proofed",
+    "heat_pump_space",
+    "solar_roof_suitable"
+  ],
+  "targets": [
+    "improvement_potential_pct",
+    "electricity_saving_kwh",
+    "gas_saving_kwh",
+    "carbon_reduction_kg_co2e",
+    "value_scenario_low_gbp",
+    "value_scenario_high_gbp",
+    "value_reference_central_gbp"
+  ],
+  "model": "RandomForestRegressor",
+  "random_state": 42,
+  "split_policy": "property-level supplied split",
+  "scoring": "deterministic weighted scoring"
+}

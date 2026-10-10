@@ -1,0 +1,79 @@
+{
+  "dataset": {
+    "properties": 1500,
+    "train": 1050,
+    "validation": 225,
+    "test": 225,
+    "monthly_energy_rows": 18000
+  },
+  "targets": {
+    "improvement_potential_pct": {
+      "train_rows": 1050,
+      "validation_rows": 225,
+      "test_rows": 225,
+      "test_mae": 1.4704,
+      "test_rmse": 2.1921,
+      "test_r2": 0.9937,
+      "validation_mae": 1.6034
+    },
+    "electricity_saving_kwh": {
+      "train_rows": 1050,
+      "validation_rows": 225,
+      "test_rows": 225,
+      "test_mae": 270.9653,
+      "test_rmse": 458.3281,
+      "test_r2": 0.9898,
+      "validation_mae": 272.3431
+    },
+    "gas_saving_kwh": {
+      "train_rows": 1050,
+      "validation_rows": 225,
+      "test_rows": 225,
+      "test_mae": 171.0972,
+      "test_rmse": 667.9837,
+      "test_r2": 0.996,
+      "validation_mae": 132.4977
+    },
+    "carbon_reduction_kg_co2e": {
+      "train_rows": 1050,
+      "validation_rows": 225,
+      "test_rows": 225,
+      "test_mae": 74.6297,
+      "test_rmse": 199.0857,
+      "test_r2": 0.9844,
+      "validation_mae": 62.9363
+    },
+    "value_scenario_low_gbp": {
+      "train_rows": 1050,
+      "validation_rows": 225,
+      "test_rows": 225,
+      "test_mae": 1678.5029,
+      "test_rmse": 7386.7086,
+      "test_r2": 0.9985,
+      "validation_mae": 2312.5774
+    },
+    "value_scenario_high_gbp": {
+      "train_rows": 1050,
+      "validation_rows": 225,
+      "test_rows": 225,
+      "test_mae": 1779.0706,
+      "test_rmse": 7532.9305,
+      "test_r2": 0.9985,
+      "validation_mae": 2467.0896
+    },
+    "value_reference_central_gbp": {
+      "train_rows": 1050,
+      "validation_rows": 225,
+      "test_rows": 225,
+      "test_mae": 1803.4164,
+      "test_rmse": 7878.0893,
+      "test_r2": 0.9983,
+      "validation_mae": 2391.5927
+    }
+  },
+  "limitations": [
+    "Supplied reference labels are synthetic/reference estimates; held-out agreement does not prove real-world retrofit causality.",
+    "Property value impact is indicative, not a guaranteed causal uplift."
+  ],
+  "green_home_score": "Deterministic weighted scoring engine; no ML training required."
+}
